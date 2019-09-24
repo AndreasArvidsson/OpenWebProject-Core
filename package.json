@@ -2,7 +2,7 @@
     "name": "owp.core",
     "description": "JS core agumentation",
     "version": "1.0.0",
-    "main": "src/index.js",
+    "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --config test/webpack.config.js --port 9090 --open"
     },

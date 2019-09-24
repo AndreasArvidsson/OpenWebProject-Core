@@ -4,11 +4,11 @@
 Augments JS core types/prototypes with additional features    
 
 Examples of new functionality is:
-* [Array](src/array/README.md): unique, remove, contains
-* [Object](src/object/README.md): map, reduce
-* [String](src/string/README.md): format, replaceAll, equalsIgnoreCase
-* [Date](src/date/README.md): format, getCurrentTimeMillis
-* [Math](src/math/README.md): clamp
+* [Array](array/README.md): unique, remove, contains
+* [Object](object/README.md): map, reduce
+* [String](string/README.md): format, replaceAll, equalsIgnoreCase
+* [Date](date/README.md): format, getCurrentTimeMillis
+* [Math](math/README.md): clamp
 
 For specifics se readme in each src/type directory.
 
