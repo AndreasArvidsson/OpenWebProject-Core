@@ -2,8 +2,6 @@ import Assert from "./Assert";
 
 console.log("test/date.js")
 
-Assert.equals("date.getCurrentTimeMillis", true, Number.isInteger(Date.getCurrentTimeMillis()));
-
 const d = new Date("2001-02-03T04:05:06.789");
 const d2 = new Date("0100-01-01T14:05:06");
 Date.setLocale("en-US");

@@ -1,10 +1,5 @@
 # OpenWebProject Core/Date
 
-## getCurrentTimeMillis
-```javascript
-Date.getCurrentTimeMillis() -> 1569347247042
-```
-
 ## setLocale
 * Used by format to generate day and month names
 * Defaults to browser standard
