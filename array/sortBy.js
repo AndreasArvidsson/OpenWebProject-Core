@@ -21,5 +21,5 @@ if (!Array.prototype.sortBy) {
 }
 
 function getField(value) {
-    return value.split(".").reduce((res, field) => res + '["' + field + '"]', "");
+    return value.split(".").reduce((res, field) => res + `["${field}"]`, "");
 }
