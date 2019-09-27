@@ -2,7 +2,6 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-    entry: path.resolve(__dirname, "test.js"),
     module: {
         rules: [
             {
@@ -20,6 +19,9 @@ module.exports = {
                     }
                 ]
             }
+        ],
+        noParse: [
+            /benchmark/,
         ]
     },
     plugins: [
@@ -28,3 +30,10 @@ module.exports = {
         })
     ]
 };
+
+if (process.argv.indexOf("--perf") < 0) {
+    module.exports.entry = path.resolve(__dirname, "test.js");
+}
+else {
+    module.exports.entry = path.resolve(__dirname, "performance/perf.js");
+}  

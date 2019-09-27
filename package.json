@@ -4,7 +4,8 @@
     "version": "1.2.0",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --config test/webpack.config.js --port 9090 --open"
+        "start": "webpack-dev-server --config test/webpack.config.js --port 9090 --open",
+        "perf": "webpack-dev-server --config test/webpack.config.js --port 9090 --open --perf"
     },
     "keywords": [
         "core",
@@ -30,6 +31,7 @@
         "@babel/core": "latest",
         "eslint-loader": "latest",
         "eslint": "latest",
-        "babel-eslint": "latest"
+        "babel-eslint": "latest",
+        "lodash": "latest"
     }
 }
