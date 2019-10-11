@@ -1,5 +1,12 @@
 # OpenWebProject Core/Object
 
+## forEach
+```javascript
+obj.forEach((value, key) => {
+    console.log(key, value);
+});
+```
+
 ## map
 ```javascript
 //Format

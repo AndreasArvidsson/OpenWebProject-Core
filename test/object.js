@@ -8,6 +8,12 @@ const obj = {
     c: 3
 };
 
+const res = {};
+obj.forEach((v, k) => {
+  res[k] = v;
+});
+Assert.jsonEquals("object.forEach", obj, res);
+
 Assert.jsonEquals("object.map", [1, 2, 3], obj.map(v => v));
 Assert.jsonEquals("object.map", ["a", "b", "c"], obj.map((v, k) => k));
 
