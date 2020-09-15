@@ -8,6 +8,13 @@ arr.contains(e => e % 2 === 2)) -> true
 arr.contains(e => e === 7) -> false
 ```
 
+## move
+```javascript
+const arr = ["A", "B", "C", "D", "E"];
+arr.move(1, 3);
+arr -> ["A", "C", "D", "B", "E"]
+```
+
 ## remove
 ```javascript
 const arr = [1, 2, 3, 4, 5, 5];
