@@ -1,12 +1,7 @@
 /**
 * Return true if this is alpha[a-zA-Z] only.
 * @public
+* @param {string} str
 * @returns {bool}
 */
-if (!String.prototype.isAlpha) {
-    Object.defineProperty(String.prototype, "isAlpha", {
-        value: function () {
-            return this.match(/^[a-z]+$/i) !== null;
-        }
-    });
-}
+export default str => str.match(/^[a-zA-Z]+$/) !== null;

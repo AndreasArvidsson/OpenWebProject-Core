@@ -2,7 +2,7 @@
 
 ## clamp
 ```javascript
-Math.clamp(6, 5, 7) -> 6
-Math.clamp(2, 5, 7) -> 5
-Math.clamp(10, 5, 7) -> 7
+clamp(6, 5, 7) -> 6
+clamp(2, 5, 7) -> 5
+clamp(10, 5, 7) -> 7
 ```

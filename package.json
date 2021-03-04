@@ -1,14 +1,13 @@
 {
     "name": "owp.core",
     "description": "JS core agumentation",
-    "version": "1.4.0",
-    "main": "src/index.js",
+    "version": "2.0.0",
     "files": [
         "src/*"
     ],
     "scripts": {
-        "start": "webpack-dev-server --config test/webpack.config.js --port 9090 --open",
-        "perf": "webpack-dev-server --config test/webpack.config.js --port 9090 --open --perf",
+        "start": "webpack serve --config test/webpack.config.js --mode development --port 9090 --open",
+        "perf": "webpack serve --config test/webpack.config.js --mode production --port 9090 --open --env perf",
         "pub": "node node_modules/publish-flatten --flatten src --strip scripts --strip devDependencies"
     },
     "keywords": [

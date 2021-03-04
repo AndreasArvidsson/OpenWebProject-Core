@@ -1,14 +1,17 @@
-if (!Array.prototype.move) {
-    Object.defineProperty(Array.prototype, "move", {
-        value: function (from, to) {
-            if (to >= this.length) {
-                this[to] = this.splice(from, 1)[0];
-            }
-            else {
-                this.splice(to, 0,
-                    this.splice(from, 1)[0]
-                );
-            }
-        }
-    });
-}
+/**
+ * Move element from one index to the other.
+ * @public
+ * @param {Array} arr
+ * @param {number} from
+ * @param {number} to
+ */
+export default (arr, from, to) => {
+    if (to >= arr.length) {
+        arr[to] = arr.splice(from, 1)[0];
+    }
+    else {
+        arr.splice(to, 0,
+            arr.splice(from, 1)[0]
+        );
+    }
+};

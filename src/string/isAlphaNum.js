@@ -1,12 +1,7 @@
 /**
  * Return true if this string is alphanumberic[a-zA-Z0-9] only.
  * @public
+ * @param {string} str
  * @returns {bool}
  */
-if (!String.prototype.isAlphaNum) {
-    Object.defineProperty(String.prototype, "isAlphaNum", {
-        value: function () {
-            return this.match(/^[a-z0-9]+$/i) !== null;
-        }
-    });
-}
+export default str => str.match(/^[a-zA-Z0-9]+$/) !== null;

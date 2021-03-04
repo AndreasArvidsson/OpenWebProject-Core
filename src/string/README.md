@@ -2,39 +2,44 @@
 
 ## capitalizeFirst
 ```javascript
-"hello".capitalizeFirst() -> "Hello"
+capitalizeFirst("hello") -> "Hello"
 ```
 
 ## equalsIgnoreCase
 ```javascript
-"hello".equalsIgnoreCase("Hello") -> true
+equalsIgnoreCase("hello", "Hello") -> true
 ```
 
 ## format
 ```javascript
-"_{0}_{1}_{2}_".format("A", 5, true) -> "_A_5_true_"
-"_{0}_{0}_{0}_".format("A") -> "_A_A_A_"
+format("_{0}_{1}_{2}_", "A", 5, true) -> "_A_5_true_"
+format("_{0}_{0}_{0}_", "A") -> "_A_A_A_"
 ```
 
 ## includesIgnoreCase
 ```javascript
-"_hello_".includesIgnoreCase("Hello") -> true
+includesIgnoreCase("_hello_", "Hello") -> true
 ```
 
 ## isAlpha
 ```javascript
-"hello".isAlpha() -> true
-"hello_".isAlpha() -> false
+isAlpha("hello") -> true
+isAlpha("hello_") -> false
 ```
 
 ## isAlphaNum
 ```javascript
-"hello".isAlphaNum() -> true
-"hello1".isAlphaNum() -> true
-"hello_".isAlphaNum() -> false
+isAlphaNum("hello") -> true
+isAlphaNum("hello1") -> true
+isAlphaNum("hello_") -> false
 ```
 
 ## replaceAll
 ```javascript
-"A_B_C".replaceAll("_", " ") -> "A B C"
+replaceAll("A_B_C", "_", " ") -> "A B C"
+```
+
+## sweCompare
+```javascript
+sweCompare("Ö", "Z") -> 1
 ```

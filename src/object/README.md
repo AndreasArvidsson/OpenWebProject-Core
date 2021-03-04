@@ -2,7 +2,7 @@
 
 ## forEach
 ```javascript
-obj.forEach((value, key) => {
+forEach(obj, (value, key) => {
     console.log(key, value);
 });
 ```
@@ -10,19 +10,20 @@ obj.forEach((value, key) => {
 ## map
 ```javascript
 //Format
-obj.map(function(value, key) {
+map(obj, function(value, key) {
     return value;
 })
 
 const obj = { a: 1, b: 2, c: 3 };
-obj.map(v => v) -> [1, 2, 3]
-obj.map((v, k) => k) -> ["a", "b", "c"]
+map(obj, v => v) -> [1, 2, 3]
+map(obj, (v, k) => k) -> ["a", "b", "c"]
 ```
 
 ## reduce
 ```javascript
 //Format
-obj.reduce(
+reduce(
+    obj,
     function(accumulator, value, key, object) {
         return accumulator + value;
     },
@@ -31,9 +32,9 @@ obj.reduce(
 
 const obj = { a: 1, b: 2, c: 3 };
 
-obj.reduce((accumulator, value) => accumulator + value, 0) -> 6
+reduce(obj, (accumulator, value) => accumulator + value, 0) -> 6
 
-obj.reduce((accumulator, value) => {
+reduce(obj, (accumulator, value) => {
         accumulator.value += value;
         return accumulator;
     }, 

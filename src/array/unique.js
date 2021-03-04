@@ -1,9 +1,11 @@
-if (!Array.prototype.unique) {
-    Object.defineProperty(Array.prototype, "unique", {
-        value: function () {
-            return this.filter(function (value, index, self) {
-                return self.indexOf(value) === index;
-            });
-        }
-    });
-}
+/**
+ * Returns new array with only unique elements.
+ * @public
+ * @param {Array} arr
+ * @returns {array} - New array
+ */
+export default arr => (
+    arr.filter((value, index) =>
+        arr.indexOf(value) === index
+    )
+);

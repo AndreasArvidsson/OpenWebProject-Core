@@ -1,9 +1,13 @@
-if (!Object.prototype.reduce) {
-    Object.defineProperty(Object.prototype, "reduce", {
-        value: function (callback, initValue) {
-            return Object.keys(this).reduce((accumulator, key) => {
-                return callback(accumulator, this[key], key, this);
-            }, initValue);
-        }
-    });
-}
+/**
+ * Reduce object to accumulator value.
+ * @public
+ * @param {object} obj
+ * @param {function} callback
+ * @param {any} initValue
+ * @returns {string}
+ */
+export default (obj, callback, initValue) => (
+    Object.keys(obj).reduce((accumulator, key) => (
+        callback(accumulator, obj[key], key, obj)
+    ), initValue)
+);

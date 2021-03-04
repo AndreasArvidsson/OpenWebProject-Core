@@ -1,4 +1,4 @@
-class Perf {
+class Performance {
 
     constructor(name) {
         this.name = name;
@@ -33,4 +33,5 @@ class Perf {
     }
 
 }
-export default Perf;
+
+export default Performance;

@@ -4,13 +4,13 @@
 * Used by format to generate day and month names
 * Defaults to browser standard
 ```javascript
-Date.setLocale("en-US")
+format.setLocale("en-US")
 ```
 
 ## format
 ```javascript
-Date.format("yyyy-MM-ddTHH-mm-ss") -> "2019-05-13T12:23:12"
-new Date().format("yyyy-MM-ddTHH-mm-ss") -> "2019-05-13T12:23:12"
+format(new Date(), "yyyy-MM-ddTHH-mm-ss") -> "2019-05-13T12:23:12"
+format(new Date(), "yyyy-MM-ddTHH-mm-ss") -> "2019-05-13T12:23:12"
 ```
 
 ## Parameters
