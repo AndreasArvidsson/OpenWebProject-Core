@@ -10,7 +10,7 @@ Examples of new functionality is:
 * [Date](src/date/README.md): format
 * [Math](src/math/README.md): clamp
 
-For specifics se readme in each src/type directory.
+For specifics see readme in each src/type directory.
 
 ## Installation
 `npm install owp.core --save`
