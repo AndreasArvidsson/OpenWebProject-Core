@@ -45,3 +45,9 @@ sortBy(arr, "values.value", "-obj.name");
 const arr = [1, 2, 3, 4, 5, 5];
 unique(arr) -> [1, 2, 3, 4, 5]
 ```
+
+## uniqueCallback
+```javascript
+const arr = [1, 2, 3, 4, 5, 5];
+arr.filter(uniqueCallback) -> [1, 2, 3, 4, 5]
+```

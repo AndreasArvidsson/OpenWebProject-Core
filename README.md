@@ -18,10 +18,11 @@ For specifics see readme in each src/type directory.
 ## Usage
 ```javascript
 //Using named exports
-import { unique, unique } from "owp.core/array";
+import { sortBy, unique } from "owp.core/array";
 import { format } from "owp.core/string";
 
 //Using default export
+import sortBy from "owp.core/array/sortBy";
 import unique from "owp.core/array/unique";
 import format from "owp.core/string/format";
 ```

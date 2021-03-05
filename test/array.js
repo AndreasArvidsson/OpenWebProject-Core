@@ -3,6 +3,7 @@ import {
     contains,
     remove,
     unique,
+    uniqueCallback,
     sortBy,
     move
 } from "array";
@@ -19,6 +20,8 @@ Assert.equals("array.remove", 2, removed.length);
 Assert.equals("array.remove", 4, arr.length);
 
 Assert.equals("array.unique", 3, unique(arr).length);
+
+Assert.equals("array.uniqueCallback", 3, arr.filter(uniqueCallback).length);
 
 const arr2 = [
     { value: 5, name: "b" },
