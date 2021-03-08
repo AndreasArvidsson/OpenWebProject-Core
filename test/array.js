@@ -5,6 +5,7 @@ import {
     unique,
     uniqueCallback,
     sortBy,
+    sortByCallback,
     move
 } from "array";
 
@@ -39,8 +40,8 @@ const arr3 = [
     { values: { value: 2, name: "a" } },
     { values: { value: 5, name: "a" } }
 ]
-sortBy(arr3, "values.value", "-values.name");
-Assert.equals("array.sortBy",
+arr3.sort(sortByCallback("values.value", "-values.name"));
+Assert.equals("array.sortByCallback",
     '[{"values":{"value":2,"name":"a"}},{"values":{"value":5,"name":"b"}},{"values":{"value":5,"name":"a"}}]',
     JSON.stringify(arr3)
 );

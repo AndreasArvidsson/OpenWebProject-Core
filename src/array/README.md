@@ -40,6 +40,22 @@ arr -> [
 sortBy(arr, "values.value", "-obj.name");
 ```
 
+## sortByCallback
+```javascript
+const arr = [
+    { value: 5, name: "b"},
+    { value: 2, name: "a"},
+    { value: 5, name: "a"}
+]
+//Sort first on value(ascending) then name(descending)
+arr.sort(sortByCallback("value", "-name"));
+arr -> [
+    { value: 2, name: "a"},
+    { value: 5, name: "b"},
+    { value: 5, name: "a"}
+]
+```
+
 ## unique
 ```javascript
 const arr = [1, 2, 3, 4, 5, 5];
